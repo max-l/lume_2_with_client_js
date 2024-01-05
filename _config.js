@@ -12,8 +12,9 @@ site.use(jsx({
     pageSubExtension: ".page",
   }))
 
+
 site.use(esbuild({
-    extensions: [".jsx"],
+    extensions: [".jsx", ".js"],
     options: {
         jsxDev: ! isProduction,
         minify: isProduction

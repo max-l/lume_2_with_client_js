@@ -6,15 +6,19 @@
   },
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "npm:react",    
+    "jsxImportSource": "npm:react",
     "types": [
       "lume/types.ts",
-      "https://unpkg.com/@types/react@18.2.37/index.d.ts"
+      "https://unpkg.com/@types/react@18.2.0/index.d.ts"
     ]
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v2.0.2/"
+    "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@9f93bec0a38bb49c23dd18b2ef10d1029efbf4f0/",
+    "react-dom": "https://esm.sh/v127/*react-dom@18.2.0",
+    "react-dom/": "https://esm.sh/v127/*react-dom@18.2.0/",
+    "react-dom/client": "https://esm.sh/v127/*react-dom@18.2.0/client",
+    "react": "https://esm.sh/v127/react@18.2.0",
+    "react/": "https://esm.sh/v127/react@18.2.0/",
+    "scheduler": "https://esm.sh/v127/scheduler@0.23.0"    
   }
 }
-
-
