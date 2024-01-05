@@ -8,10 +8,11 @@ const site = lume()
 
 const isProduction = false
 
-site.use(jsx())
+site.use(jsx({
+    pageSubExtension: ".page",
+  }))
 
 site.use(esbuild({
-    entryPoints: ['main.jsx'],
     extensions: [".jsx"],
     options: {
         jsxDev: ! isProduction,

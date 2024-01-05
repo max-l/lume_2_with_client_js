@@ -7,7 +7,7 @@ export default ({ title, children }, helpers) => (
         <script type="module" src={helpers.url("/main.js")} bundle="true"></script>
       </head>
       <body>
-        <h1>popo</h1>
+        <h1>abc</h1>
         {children}
       </body>
     </html>
